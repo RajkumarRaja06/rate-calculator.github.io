@@ -104,15 +104,16 @@ body {
 }
 
 .container {
-  width: 450px;
+  width: 450x;
   height: 600px;
   border: 1px solid var(--clr-ut-orange);
   background-color: var(--clr-ut-orange);
-  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
 
 .title {
@@ -139,11 +140,11 @@ body {
 }
 
 #swapBtn {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: var(--clr-prussian-blue);
   color: var(--clr-selective-yellow);
   padding: 0.5rem 0.5rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   cursor: pointer;
 }
 
@@ -157,7 +158,9 @@ body {
 }
 
 select {
+  font-size: 1rem;
   width: 100%;
+  font-weight: 900;
   height: 3rem;
   text-align: center;
 }
@@ -176,9 +179,34 @@ option {
   cursor: pointer;
 }
 
-#output {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 1rem;
+.btn-convert:hover {
+  cursor: pointer;
+  font-weight: 900;
+  background-color: #fff;
   color: var(--clr-prussian-blue);
+}
+
+.output {
+  display: none;
+  text-align: center;
+  border: 1px solid black;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  color: var(--clr-prussian-blue);
+  background-color: #fff;
+  box-shadow: var(--dark-shadow);
+  padding: 0.5rem;
+}
+
+#rateEl {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 0.7rem;
+}
+
+.flex {
+  display: flex;
 }
