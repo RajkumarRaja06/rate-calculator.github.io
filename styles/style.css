@@ -68,29 +68,7 @@ h4 {
 p {
   margin-bottom: 1.25rem;
 }
-@media screen and (min-width: 992px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
+
 /*  global classes */
 
 body {
@@ -134,6 +112,7 @@ body {
 }
 
 .amount {
+  width: 100%;
   padding: 0.95rem;
   font-weight: 900;
   font-size: 1.5rem;
@@ -168,6 +147,7 @@ select {
 option {
   background-color: var(--clr-prussian-blue);
   color: #ffffff;
+  text-align: center;
 }
 
 .btn-convert {
@@ -209,4 +189,37 @@ option {
 
 .flex {
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    height: 90%;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  #amountName {
+    font-size: 1.2rem;
+  }
+  .amount {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  #rateEl {
+    font-size: 1rem;
+  }
+  .output {
+    font-size: 1.5rem;
+  }
+  select {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  option {
+    background-color: var(--clr-prussian-blue);
+    color: #ffffff;
+  }
 }
