@@ -49,7 +49,7 @@ const calculate = async () => {
     output.classList.add("flex");
     output.innerText = (inputValue * rate).toFixed(2);
   } else {
-    alert("Input Field Is Mandaroty");
+    alert("Input Field Is Mandatory");
   }
 };
 
@@ -59,6 +59,7 @@ const swapButton = () => {
   selectTo.value = dummy;
   calculate();
 };
+
 inputEl.addEventListener("input", calculate);
 selectFrom.addEventListener("change", calculate);
 selectTo.addEventListener("change", calculate);
